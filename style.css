@@ -1,0 +1,123 @@
+@font-face {
+	font-family: seg7;
+	src: url(./assets/fonts-DSEG_v046/DSEG7-Classic/DSEG7Classic-Bold.woff);
+}
+
+input{
+	width: 99% !important; 
+	height: 90% !important;
+	border-radius: 15px !important;
+}
+
+input[type=button]{
+	background-color: #f38200;
+	border: none;
+	padding: 0px;
+	font-size: x-large;
+	font-weight: bolder;
+}
+
+input[type=text],
+input[type=number]{
+	background-color: #bccd95;
+	text-align: right;
+	font-family: seg7, serif;
+}
+
+
+.calculadora{
+	display: grid ;
+	grid-template-columns: repeat(15, 1fr);
+	grid-template-rows: 15px 60px 60px 60px;
+}
+
+.bordeCalc{
+	grid-column: 2 / span 13;
+	grid-row: 1 / span 4;
+	border-style: solid;
+	border-color: rgb(41, 41, 39);
+	border-radius: 20px;
+	background-color: rgb(41, 41, 39);
+}
+
+.titulo{
+	display: grid;
+	grid-column: 1 / span 15;
+	grid-row: 1 / 1;
+}
+
+.op1Div{
+	grid-column: 3 / span 4;
+	grid-row: 2 / 2;
+}
+
+#op1Input{
+	justify-self: start;
+}
+
+.op2Div{
+	display: grid ;
+	grid-column: 10 / span 4;
+	grid-row: 2 / 2;
+}
+
+#op2Input{
+	justify-self: end;
+}
+
+.sumaDiv{
+	display: grid;
+	grid-column: 3 / span 2;
+	grid-row: 3 / 3;
+}
+
+#sumaButton{
+	justify-self: flex-start;
+}
+
+
+.restaDiv{
+	display: grid;
+	grid-column: 6 / span 2;
+	grid-row: 3 / 3;
+}
+
+#restaButton{
+	justify-self: center;
+}
+
+.multiplicacionDiv{
+	display: grid;
+	grid-column: 9 / span 2;
+	grid-row: 3 / 3;
+}
+
+#multiplicacionButton{
+	justify-self: center;
+}
+
+.divisionDiv{
+	display: grid;
+	grid-column: 12 / span 2;
+	grid-row: 3 / 3;
+}
+
+#divisionButton{
+	justify-self: flex-end;
+}
+
+.resDiv{
+	grid-column: 5 / span 7;
+	grid-row: 4 / 4;
+}
+
+.borrarDiv{
+	display: grid;
+	grid-column: 12 / span 2;
+	grid-row: 4 / 4;
+}
+
+#borrarButton{
+	justify-self: flex-end;
+}
+
